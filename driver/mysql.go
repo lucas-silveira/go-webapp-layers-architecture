@@ -2,7 +2,8 @@ package driver
 
 import (
 	"database/sql"
-	"fmt"
+	"fmt",
+	_ "github.com/go-sql-driver/mysql"
 )
 
 // MySQLConfig ...
