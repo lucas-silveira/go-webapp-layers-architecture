@@ -8,7 +8,13 @@ import (
 	AnimalRepository "webapp/datastore/animal"
 	HttpAnimal "webapp/delivery/animal"
 	"webapp/driver"
+
+	"github.com/subosito/gotenv"
 )
+
+func init() {
+	gotenv.Load()
+}
 
 func main() {
 	config := driver.MySQLConfig{

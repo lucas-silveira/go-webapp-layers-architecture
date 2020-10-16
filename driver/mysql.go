@@ -2,7 +2,9 @@ package driver
 
 import (
 	"database/sql"
-	"fmt",
+	"fmt"
+
+	// golint fix
 	_ "github.com/go-sql-driver/mysql"
 )
 
