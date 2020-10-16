@@ -16,8 +16,8 @@ type Controller struct {
 }
 
 // New ...
-func New(animal animal.IAnimalRepository) Controller {
-	return Controller{datastore: animal}
+func New(animal animal.IAnimalRepository) *Controller {
+	return &Controller{datastore: animal}
 }
 
 // Handler ...
